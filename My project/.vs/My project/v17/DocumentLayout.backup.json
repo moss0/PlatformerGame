@@ -3,7 +3,7 @@
   "WorkspaceRootPath": "C:\\Users\\2317919\\Documents\\GitHub\\PlatformerGame\\My project\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|C:\\Users\\2317919\\Documents\\GitHub\\PlatformerGame\\My project\\assets\\scripts\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|c:\\users\\2317919\\documents\\github\\platformergame\\my project\\assets\\scripts\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -22,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
@@ -32,22 +32,9 @@
               "RelativeDocumentMoniker": "Assets\\Scripts\\RotatingObject.cs",
               "ToolTip": "C:\\Users\\2317919\\Documents\\GitHub\\PlatformerGame\\My project\\Assets\\Scripts\\RotatingObject.cs",
               "RelativeToolTip": "Assets\\Scripts\\RotatingObject.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-25T10:43:44.431Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "CameraBehavior.cs",
-              "DocumentMoniker": "C:\\Users\\2317919\\Documents\\GitHub\\PlatformerGame\\My project\\Assets\\Scripts\\CameraBehavior.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\CameraBehavior.cs",
-              "ToolTip": "C:\\Users\\2317919\\Documents\\GitHub\\PlatformerGame\\My project\\Assets\\Scripts\\CameraBehavior.cs",
-              "RelativeToolTip": "Assets\\Scripts\\CameraBehavior.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-25T10:42:58.663Z",
+              "WhenOpened": "2024-10-25T13:53:00.071Z",
               "EditorCaption": ""
             },
             {
@@ -58,9 +45,22 @@
               "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerController.cs",
               "ToolTip": "C:\\Users\\2317919\\Documents\\GitHub\\PlatformerGame\\My project\\Assets\\Scripts\\PlayerController.cs",
               "RelativeToolTip": "Assets\\Scripts\\PlayerController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAABFAAAAAAAAAA==",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAwCIAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-25T10:40:41.645Z",
+              "WhenOpened": "2024-10-25T13:52:59.041Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CameraBehavior.cs",
+              "DocumentMoniker": "C:\\Users\\2317919\\Documents\\GitHub\\PlatformerGame\\My project\\Assets\\Scripts\\CameraBehavior.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\CameraBehavior.cs",
+              "ToolTip": "C:\\Users\\2317919\\Documents\\GitHub\\PlatformerGame\\My project\\Assets\\Scripts\\CameraBehavior.cs",
+              "RelativeToolTip": "Assets\\Scripts\\CameraBehavior.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-25T13:52:53.496Z",
               "EditorCaption": ""
             }
           ]
