@@ -3,7 +3,7 @@ using UnityEngine;
 [RequireComponent(typeof(Rigidbody))]
 public class PlayerController : MonoBehaviour
 {
-    public float playerSpeed = 15f, jumpForce = 30f;
+    public float playerSpeed = 15f, jumpForce = 30f, gravityScale = 1f;
 
     private Rigidbody _rb;
 
@@ -17,19 +17,18 @@ public class PlayerController : MonoBehaviour
     {
         _rb = GetComponent<Rigidbody>();
         _mainCamera = Camera.main;
-        Time.timeScale = 0.3f;
+        //Time.timeScale = 0.3f;
     }
 
     private void Update()
     {
-
-        if (!_isGrounded && FastApproximately(0.0f,_rb.velocity.y,0.1f))
-        {
-            // Mathf.Abs(_rb.velocity.y);
-            //Use this: Mathf.Approximately(1.0f, 10.0f / 10.0f)
-            Debug.LogWarning("Height = " + _rb.transform.position.y);
-        }
-        //Debug.Log(_rb.velocity.y);
+        //if (!_isGrounded && FastApproximately(0.0f,_rb.velocity.y,0.1f))
+        //{
+        //    // Mathf.Abs(_rb.velocity.y);
+        //    //Use this: Mathf.Approximately(1.0f, 10.0f / 10.0f)
+        //    Debug.LogWarning("Height = " + _rb.transform.position.y);
+        //}
+        
     }
 
     private void FixedUpdate()
@@ -52,11 +51,17 @@ public class PlayerController : MonoBehaviour
             _isGrounded = false;
         }
         
-        if (_isGrounded && _rb.velocity.y == 0)
+        if (_isGrounded && FastApproximately(0.0f, _rb.velocity.y, 0.1f))
         {
             Vector3 jump = new Vector3(0.0f, (jumpForce * 10), 0.0f);
             _rb.AddForce(jump);
         }
+
+        _rb.AddForce(Physics.gravity * (gravityScale - 1) * _rb.mass);
+
+        //Ask chatGPT: Unity how to make a ball bounce off of surfaces of all kinds of angles
+        //with the resultant force in the angle of reflection?
+
     }
     public static bool FastApproximately(float a, float b, float threshold)
     {
