@@ -11,6 +11,8 @@ public class PlayerController : MonoBehaviour
     private float _timer;
     private Camera _mainCamera;
 
+    
+
     private void Awake()
     {
         _rb = GetComponent<Rigidbody>();
@@ -20,11 +22,14 @@ public class PlayerController : MonoBehaviour
 
     private void Update()
     {
-        if (!_isGrounded && _rb.velocity.y == 0)
+
+        if (!_isGrounded && FastApproximately(0.0f,_rb.velocity.y,0.1f))
         {
+            // Mathf.Abs(_rb.velocity.y);
             //Use this: Mathf.Approximately(1.0f, 10.0f / 10.0f)
-            Debug.Log("Height = " + _rb.transform.position.y);
+            Debug.LogWarning("Height = " + _rb.transform.position.y);
         }
+        //Debug.Log(_rb.velocity.y);
     }
 
     private void FixedUpdate()
@@ -52,5 +57,9 @@ public class PlayerController : MonoBehaviour
             Vector3 jump = new Vector3(0.0f, (jumpForce * 10), 0.0f);
             _rb.AddForce(jump);
         }
+    }
+    public static bool FastApproximately(float a, float b, float threshold)
+    {
+        return ((a - b) < 0 ? ((a - b) * -1) : (a - b)) <= threshold;
     }
 }
