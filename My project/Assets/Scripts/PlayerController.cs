@@ -11,7 +11,7 @@ public class PlayerController : MonoBehaviour
     private float _timer;
     private Camera _mainCamera;
 
-    
+    public Transform OutOfBoundsDestination;
 
     private void Awake()
     {
@@ -66,5 +66,10 @@ public class PlayerController : MonoBehaviour
     public static bool FastApproximately(float a, float b, float threshold)
     {
         return ((a - b) < 0 ? ((a - b) * -1) : (a - b)) <= threshold;
+    }
+    private void OnTriggerEnter(Collider other)
+    {
+        _rb.velocity = Vector3.zero;
+        _rb.transform.position = OutOfBoundsDestination.position;
     }
 }
