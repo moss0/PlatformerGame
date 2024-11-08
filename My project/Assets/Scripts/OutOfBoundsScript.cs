@@ -4,15 +4,21 @@ using UnityEngine;
 
 public class OutOfBoundsScript : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public Rigidbody _rb;
+    public Transform OutOfBoundsDest;
+
+    public void Start()
     {
-        
+        _rb = GetComponent<Rigidbody>();
     }
 
-    // Update is called once per frame
-    void Update()
+    private void OnTriggerEnter(Collider other)
     {
-        
+        if (other.CompareTag("Player"))
+        {
+            _rb.velocity = Vector3.zero;
+            _rb.transform.position = OutOfBoundsDest.position;
+        }
     }
+
 }
