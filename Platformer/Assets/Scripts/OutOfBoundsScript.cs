@@ -7,10 +7,10 @@ public class OutOfBoundsScript : MonoBehaviour
     public Rigidbody _rb;
     public Transform OutOfBoundsDest;
 
-    public void Start()
-    {
-        _rb = GetComponent<Rigidbody>();
-    }
+    //public void Start()
+    //{
+    //    _rb = GetComponent<Rigidbody>();
+    //}
 
     private void OnTriggerEnter(Collider other)
     {
