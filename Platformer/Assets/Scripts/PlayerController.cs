@@ -10,13 +10,14 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private bool _isGrounded;
     private float _timer;
     private Camera _mainCamera;
+    private Vector3 reflectedVelocity;
 
 
     private void Awake()
     {
         _rb = GetComponent<Rigidbody>();
         _mainCamera = Camera.main;
-        //Time.timeScale = 0.3f;
+        Time.timeScale = 0.3f;
     }
 
     private void Update()
@@ -41,7 +42,7 @@ public class PlayerController : MonoBehaviour
         _rb.AddForce(movement * playerSpeed);
 
         RaycastHit hit;
-        if (Physics.Raycast(transform.position, Vector3.down, out hit, 0.51f))
+        if (Physics.Raycast(transform.position, Vector3.down, out hit, 0.53f))
         {
             _isGrounded = true;
         }
@@ -49,21 +50,27 @@ public class PlayerController : MonoBehaviour
         {
             _isGrounded = false;
         }
-        
-        if (_isGrounded && FastApproximately(0.0f, _rb.velocity.y, 0.1f))
-        {
-            Vector3 jump = new Vector3(0.0f, (jumpForce * 10), 0.0f);
-            _rb.AddForce(jump);
-        }
+
+        //if (_isGrounded && FastApproximately(0.0f, _rb.velocity.y, 0.1f))
+        //{
+        //    Vector3 jump = new Vector3(0.0f, (jumpForce * 10), 0.0f);
+        //    _rb.AddForce(jump);
+        //}
 
         _rb.AddForce(Physics.gravity * (gravityScale - 1) * _rb.mass);
-
-        //Ask chatGPT: Unity how to make a ball bounce off of surfaces of all kinds of angles
-        //with the resultant force in the angle of reflection?
-
     }
     public static bool FastApproximately(float a, float b, float threshold)
     {
         return ((a - b) < 0 ? ((a - b) * -1) : (a - b)) <= threshold;
+    }
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (_isGrounded)
+        {
+            ContactPoint contact = collision.GetContact(0);
+            Vector3 normal = contact.normal;
+            reflectedVelocity = Vector3.Reflect(_rb.velocity, normal);
+            _rb.velocity = reflectedVelocity;
+        }
     }
 }
