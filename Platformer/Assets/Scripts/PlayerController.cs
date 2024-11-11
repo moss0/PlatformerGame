@@ -42,7 +42,7 @@ public class PlayerController : MonoBehaviour
         _rb.AddForce(movement * playerSpeed);
 
         RaycastHit hit;
-        if (Physics.Raycast(transform.position, Vector3.down, out hit, 0.53f))
+        if (Physics.Raycast(transform.position, Vector3.down, out hit, 0.51f))
         {
             _isGrounded = true;
         }
@@ -50,27 +50,28 @@ public class PlayerController : MonoBehaviour
         {
             _isGrounded = false;
         }
-
-        //if (_isGrounded && FastApproximately(0.0f, _rb.velocity.y, 0.1f))
-        //{
-        //    Vector3 jump = new Vector3(0.0f, (jumpForce * 10), 0.0f);
-        //    _rb.AddForce(jump);
-        //}
-
+        // && FastApproximately(0.0f, _rb.velocity.y, 0.1f)
+        if (_isGrounded)
+        {
+            _rb.velocity = new Vector3(_rb.velocity.x, 0.0f, _rb.velocity.z);
+            Vector3 jump = new Vector3(0.0f, (jumpForce * 10), 0.0f);
+            _rb.AddForce(jump);
+        }
+        
         _rb.AddForce(Physics.gravity * (gravityScale - 1) * _rb.mass);
     }
     public static bool FastApproximately(float a, float b, float threshold)
     {
         return ((a - b) < 0 ? ((a - b) * -1) : (a - b)) <= threshold;
     }
-    private void OnCollisionEnter(Collision collision)
-    {
-        if (_isGrounded)
-        {
-            ContactPoint contact = collision.GetContact(0);
-            Vector3 normal = contact.normal;
-            reflectedVelocity = Vector3.Reflect(_rb.velocity, normal);
-            _rb.velocity = reflectedVelocity;
-        }
-    }
+    //private void OnCollisionEnter(Collision collision)
+    //{
+    //    if (_isGrounded)
+    //    {
+    //        ContactPoint contact = collision.GetContact(0);
+    //        Vector3 normal = contact.normal;
+    //        reflectedVelocity = Vector3.Reflect(_rb.velocity, normal);
+    //        _rb.velocity = reflectedVelocity;
+    //    }
+    //}
 }

@@ -6,6 +6,7 @@ public class CameraBehavior : MonoBehaviour
     public float rotationSpeed = 5f, zoomSpeed = 5f;
     public float minZoomDistance = 2f, maxZoomDistance = 15f;
 
+
     private float _rotationX = 0f, _rotationY = 0f, _currentZoomDistance = 10f;
 
     private void Start()
@@ -36,10 +37,25 @@ public class CameraBehavior : MonoBehaviour
             float zoomAmount = scrollWheel * zoomSpeed;
             UpdateZoomDistance(zoomAmount);
         }
+
+        //RaycastHit cameraBackHit;
+        //if (Physics.Raycast(transform.position, -transform.forward,out cameraBackHit,))
+        //{
+        //    transform.position = cameraBackHit.point;
+        //}
+
     }
 
     private void UpdateZoomDistance(float zoomAmount)
     {
         _currentZoomDistance = Mathf.Clamp(_currentZoomDistance - zoomAmount, minZoomDistance, maxZoomDistance);
     }
+    
+    //private void OnCollisionEnter(Collision collision)
+    //{
+    //    if (collison.CompareTag("Solid"))
+    //    {
+
+    //    }
+    //}
 }
