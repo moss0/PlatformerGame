@@ -17,7 +17,7 @@ public class PlayerController : MonoBehaviour
     {
         _rb = GetComponent<Rigidbody>();
         _mainCamera = Camera.main;
-        Time.timeScale = 0.3f;
+        //Time.timeScale = 0.3f;
     }
 
     private void Update()
