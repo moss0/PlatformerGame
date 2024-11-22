@@ -119,7 +119,7 @@ GameObject:
   - component: {fileID: 2828587299636092889}
   - component: {fileID: 663430844295262078}
   - component: {fileID: 6990530348138129090}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Trigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -182,6 +182,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f33552302c871184eadc4cdf737a2139, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Scene: 0
 --- !u!1 &6401368382254435427
 GameObject:
   m_ObjectHideFlags: 0

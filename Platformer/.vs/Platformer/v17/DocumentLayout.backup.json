@@ -1,30 +1,10 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\44777\\Documents\\GitHub\\PlatformerGame\\Platformer\\",
+  "WorkspaceRootPath": "C:\\Users\\2317919\\Documents\\GitHub\\PlatformerGame\\Platformer\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{100AE41E-9853-00A1-0814-C759729749EB}|Assembly-CSharp.csproj|c:\\users\\44777\\documents\\github\\platformergame\\platformer\\assets\\scripts\\camerabehavior.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{100AE41E-9853-00A1-0814-C759729749EB}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\camerabehavior.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{100AE41E-9853-00A1-0814-C759729749EB}|Assembly-CSharp.csproj|C:\\Users\\44777\\Documents\\GitHub\\PlatformerGame\\Platformer\\assets\\scripts\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{100AE41E-9853-00A1-0814-C759729749EB}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{100AE41E-9853-00A1-0814-C759729749EB}|Assembly-CSharp.csproj|c:\\users\\44777\\documents\\github\\platformergame\\platformer\\assets\\scripts\\a_to_b_object.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{100AE41E-9853-00A1-0814-C759729749EB}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\a_to_b_object.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{100AE41E-9853-00A1-0814-C759729749EB}|Assembly-CSharp.csproj|C:\\Users\\44777\\Documents\\GitHub\\PlatformerGame\\Platformer\\assets\\scripts\\rotatingobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{100AE41E-9853-00A1-0814-C759729749EB}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\rotatingobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{100AE41E-9853-00A1-0814-C759729749EB}|Assembly-CSharp.csproj|C:\\Users\\44777\\Documents\\GitHub\\PlatformerGame\\Platformer\\assets\\scripts\\outofboundsscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{100AE41E-9853-00A1-0814-C759729749EB}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\outofboundsscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{100AE41E-9853-00A1-0814-C759729749EB}|Assembly-CSharp.csproj|C:\\Users\\44777\\Documents\\GitHub\\PlatformerGame\\Platformer\\assets\\scripts\\playerspotlight.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{100AE41E-9853-00A1-0814-C759729749EB}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playerspotlight.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{100AE41E-9853-00A1-0814-C759729749EB}|Assembly-CSharp.csproj|c:\\users\\2317919\\documents\\github\\platformergame\\platformer\\assets\\scripts\\levelpodium.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{100AE41E-9853-00A1-0814-C759729749EB}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\levelpodium.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -39,76 +19,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "CameraBehavior.cs",
-              "DocumentMoniker": "C:\\Users\\44777\\Documents\\GitHub\\PlatformerGame\\Platformer\\Assets\\Scripts\\CameraBehavior.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\CameraBehavior.cs",
-              "ToolTip": "C:\\Users\\44777\\Documents\\GitHub\\PlatformerGame\\Platformer\\Assets\\Scripts\\CameraBehavior.cs",
-              "RelativeToolTip": "Assets\\Scripts\\CameraBehavior.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAgwDoAAAALAAAAAAAAAA==",
+              "Title": "LevelPodium.cs",
+              "DocumentMoniker": "C:\\Users\\2317919\\Documents\\GitHub\\PlatformerGame\\Platformer\\Assets\\Scripts\\LevelPodium.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\LevelPodium.cs",
+              "ToolTip": "C:\\Users\\2317919\\Documents\\GitHub\\PlatformerGame\\Platformer\\Assets\\Scripts\\LevelPodium.cs",
+              "RelativeToolTip": "Assets\\Scripts\\LevelPodium.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-11T04:34:28.154Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "RotatingObject.cs",
-              "DocumentMoniker": "C:\\Users\\44777\\Documents\\GitHub\\PlatformerGame\\Platformer\\Assets\\Scripts\\RotatingObject.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\RotatingObject.cs",
-              "ToolTip": "C:\\Users\\44777\\Documents\\GitHub\\PlatformerGame\\Platformer\\Assets\\Scripts\\RotatingObject.cs",
-              "RelativeToolTip": "Assets\\Scripts\\RotatingObject.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-10T21:25:12.757Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "A_to_B_Object.cs",
-              "DocumentMoniker": "C:\\Users\\44777\\Documents\\GitHub\\PlatformerGame\\Platformer\\Assets\\Scripts\\A_to_B_Object.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\A_to_B_Object.cs",
-              "ToolTip": "C:\\Users\\44777\\Documents\\GitHub\\PlatformerGame\\Platformer\\Assets\\Scripts\\A_to_B_Object.cs",
-              "RelativeToolTip": "Assets\\Scripts\\A_to_B_Object.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-10T21:22:21.982Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "PlayerSpotLight.cs",
-              "DocumentMoniker": "C:\\Users\\44777\\Documents\\GitHub\\PlatformerGame\\Platformer\\Assets\\Scripts\\PlayerSpotLight.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerSpotLight.cs",
-              "ToolTip": "C:\\Users\\44777\\Documents\\GitHub\\PlatformerGame\\Platformer\\Assets\\Scripts\\PlayerSpotLight.cs",
-              "RelativeToolTip": "Assets\\Scripts\\PlayerSpotLight.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAKAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-09T19:45:17.552Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "OutOfBoundsScript.cs",
-              "DocumentMoniker": "C:\\Users\\44777\\Documents\\GitHub\\PlatformerGame\\Platformer\\Assets\\Scripts\\OutOfBoundsScript.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\OutOfBoundsScript.cs",
-              "ToolTip": "C:\\Users\\44777\\Documents\\GitHub\\PlatformerGame\\Platformer\\Assets\\Scripts\\OutOfBoundsScript.cs",
-              "RelativeToolTip": "Assets\\Scripts\\OutOfBoundsScript.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-08T22:47:56.232Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "PlayerController.cs",
-              "DocumentMoniker": "C:\\Users\\44777\\Documents\\GitHub\\PlatformerGame\\Platformer\\Assets\\Scripts\\PlayerController.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerController.cs",
-              "ToolTip": "C:\\Users\\44777\\Documents\\GitHub\\PlatformerGame\\Platformer\\Assets\\Scripts\\PlayerController.cs",
-              "RelativeToolTip": "Assets\\Scripts\\PlayerController.cs",
-              "ViewState": "AgIAACMAAAAAAAAAAAAwwEIAAAA4AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-08T22:47:42.202Z",
+              "WhenOpened": "2024-11-22T11:29:53.532Z",
               "EditorCaption": ""
             }
           ]
